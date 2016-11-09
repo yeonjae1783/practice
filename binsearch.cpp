@@ -4,9 +4,7 @@ using namespace std;
 void TimeSearch();
 void binsearch(int n, int S[], int x);
 int main(){
-	 /*int S[] = { 1, 2, 3, 4, 5,6, 7, 8, 9,10 };
-	 cout << sizeof(S) << endl;
-	 binsearch(sizeof(S)/4,S,6);*/
+	
 	cout << "binsearch Time" << endl;
 	TimeSearch();
 }
@@ -23,7 +21,7 @@ void binsearch(int n, int S[], int x) {
 		else
 			low = mid + 1;
 	}
-	//cout << "location:" << location << endl;
+
 }
 void TimeSearch() {
 	int a[3001];
@@ -48,6 +46,6 @@ void TimeSearch() {
 		float runTime = ((float)((totalTime) / (CLK_TCK)) / (float)(r[j]));
 		cout << " " << n[j] << "   " << runTime << endl;
 	}
-	//cout << "Times are in hundredths of a second" << endl;
+	
 
 }
